@@ -60,6 +60,13 @@ public class UFO : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            if (!LevelController.Instance.GameIsRunning)
+            {
+                LevelController.Instance.StartGame();
+                rigidbody.isKinematic = false;
+                rigidbody.AddForce(Vector2.down * jumpforce/2);
+
+            }
             rigidbody.AddForce(Vector2.up * jumpforce);
         }
 
@@ -95,6 +102,6 @@ public class UFO : MonoBehaviour
     public void Die()
     {
         Destroy(gameObject);
-        GameController.Instance.LoadMenu();
+        LevelController.Instance.GameOver();
     }
 }

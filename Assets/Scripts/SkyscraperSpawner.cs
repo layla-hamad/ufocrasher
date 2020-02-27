@@ -20,13 +20,16 @@ public class SkyscraperSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //When the delta spawn time was awaited
+        // if the game is not running do not spawn skyscrapers
+        if (!LevelController.Instance.GameIsRunning) return;
+
+        // when the delta spawn time was awaited
         if (Time.time > nextSpawnTime)
         {
-            //set the next spawn time to a time in the future
+            // set the next spawn time to a time in the future
             nextSpawnTime = Time.time + GetRandomTimeDelta();
 
-            //spawn a new skyscraper at a random position with no rotation
+            // spawn a new skyscraper at a random position with no rotation
             Instantiate(skyscraper, GetRandomPos(), Quaternion.identity);
         }
     }

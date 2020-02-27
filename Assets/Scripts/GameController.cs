@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour
     public static GameController Instance => instance;
 
 
+
     private void Awake()
     {
         //if already an instance exists destroy this gameobject
@@ -33,17 +34,5 @@ public class GameController : MonoBehaviour
     public void LoadMenu()
     {
         SceneManager.LoadScene("MenuScene");
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
