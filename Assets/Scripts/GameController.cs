@@ -3,8 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+/// <summary>
+/// GameController is present over the hole Game (Menu & Level) and controls for example the menu to game switch.
+/// </summary>
 public class GameController : MonoBehaviour
 {
+
     private static GameController instance;
     public static GameController Instance => instance;
 

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="GameController">
+    <Position X="2.5" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAgQAAAAAAAAEE=</HashCode>
+      <FileName>Assets\Scripts\GameController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="instance" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GameOverOnTouch">
+    <Position X="10.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GameOverOnTouch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LevelController">
+    <Position X="4" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAACAAAAAAAIAAAgAgAAAAAAQAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\LevelController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ufo" />
+      <Field Name="score" />
+      <Property Name="Instance" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LoopBackground">
+    <Position X="10.5" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AASBAAAAACAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAgAA=</HashCode>
+      <FileName>Assets\Scripts\LoopBackground.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Score">
+    <Position X="0.5" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAKAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Score.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyscraper">
+    <Position X="12.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAACAAAAAAAAAAASAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Skyscraper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SkyscraperDestroyer">
+    <Position X="10.5" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\SkyscraperDestroyer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SkyscraperSpawner">
+    <Position X="12.75" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQFAAACACAAAAAAAAAAAAAAAAAABAAAAAAAAJAAEBA=</HashCode>
+      <FileName>Assets\Scripts\SkyscraperSpawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UFO">
+    <Position X="7.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAUIAACAACAACAAgAAAAAAAAAAEAAAAAAAAAQAAVAAE=</HashCode>
+      <FileName>Assets\Scripts\UFO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -7,7 +7,7 @@ public class UFO : MonoBehaviour
     /// <summary>
     /// Upwards force applied to the UFOs rigidbody when jump is pressed
     /// </summary>
-    public float jumpforce = 400f;
+    public float jumpforce = 600f;
 
     /// <summary>
     /// The period of time in which UFO is invincible after having taken damage
@@ -26,9 +26,9 @@ public class UFO : MonoBehaviour
 /// <summary>
 ///The renderer controls the appearance of this object
 /// </summary>
-    private Renderer render; 
+    private Renderer render;
 
-    private int life = 3;
+    public int life = 3;
     private float timeUntilVunerable = 0f;
 
     /// <summary>

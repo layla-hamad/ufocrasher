@@ -10,6 +10,7 @@ public class LevelController : MonoBehaviour
 
     public Score score; // reference to Score-behaviour
     public UFO ufo; // reference to UFO-behaviour
+    public GameOverText gameovertext; // reference to GameOverText-behaviour
 
 
     /// <summary>
@@ -26,7 +27,7 @@ public class LevelController : MonoBehaviour
 
     private void Awake()
     {
-        // if already an instance exists destroy this gameobject
+        // if already an instance exists destroy this gameObject
         if (Instance != null)
         {
             Destroy(gameObject);
@@ -46,5 +47,6 @@ public class LevelController : MonoBehaviour
     public void GameOver()
     {
         GameIsRunning = false;
+        gameovertext.ShowGameOver();
     }
 }
