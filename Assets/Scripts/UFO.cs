@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class UFO : MonoBehaviour
 {
+    public Heart heart_1, heart_2, heart_3;
+
     /// <summary>
     /// Upwards force applied to the UFOs rigidbody when jump is pressed
     /// </summary>
@@ -85,6 +87,18 @@ public class UFO : MonoBehaviour
             render.material.color = damageColor;
             // Invoke the method RevertDamageColor() after deltaInvincibleTime
             Invoke(nameof(RevertDamageColor), deltaInvicibleTime);
+            switch (Life)
+            {
+                case 2:
+                    heart_3.HeartDisappear();
+                    break; 
+                case 1:
+                    heart_2.HeartDisappear();
+                    break;
+                case 0:
+                    heart_1.HeartDisappear();
+                    break;
+            }
         }
  
     }
