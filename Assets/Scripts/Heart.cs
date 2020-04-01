@@ -1,18 +1,28 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
+/// <summary>
+/// Behaviour of one heart
+/// </summary>
 public class Heart : MonoBehaviour
 {
-    private Renderer render;
+    private Image image;
+
+    /// <summary>
+    /// Start is called before the first frame update
+    /// </summary>
     void Start()
     {
         // get the needed components of this gameobject
-        render = GetComponent<Renderer>();
+        image = GetComponent<Image>();
     }
 
+
+    /// <summary>
+    /// Makes the heart disappear
+    /// </summary>
     public void HeartDisappear()
     {
-        render.material.color = Color.clear;
+        image.color = Color.clear;
     }
 }

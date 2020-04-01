@@ -1,7 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+
+/// <summary>
+/// Moves the skyscraper from right to left and gives the player points for passing a pair of skyscrapers
+/// </summary>
 public class Skyscraper : MonoBehaviour
 {
     /// <summary>

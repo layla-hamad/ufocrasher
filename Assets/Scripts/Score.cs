@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro; // TextMeshPro
 
 public class Score : MonoBehaviour
@@ -8,6 +6,9 @@ public class Score : MonoBehaviour
 
     private TMP_Text scoreText;
 
+    /// <summary>
+    /// Returns or sets game score
+    /// </summary>
     public int GameScore
     {
         get

@@ -39,11 +39,17 @@ public class LevelController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Starts the game
+    /// </summary>
     public void StartGame()
     {
         GameIsRunning = true;
     }
 
+    /// <summary>
+    /// Stops the game and shows the game over text
+    /// </summary>
     public void GameOver()
     {
         GameIsRunning = false;

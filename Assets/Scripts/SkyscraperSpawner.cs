@@ -1,7 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+
+/// <summary>
+/// Spawns skycrapers at an interval of a randomly generated number of seconds between deltaSpawnTimeMin 
+/// and deltaSpawnTimeMax in a random position between - deltaHeight and deltaHeight
+/// </summary>
 public class SkyscraperSpawner : MonoBehaviour
 {
     public GameObject skyscraper;
@@ -34,18 +37,29 @@ public class SkyscraperSpawner : MonoBehaviour
         }
     }
 
+
+    /// <summary>
+    /// Draws lines in the editor to display the max and min spawn position
+    /// </summary>
     private void OnDrawGizmos()
     {
         Gizmos.DrawLine(transform.position - new Vector3(0.5f, deltaHeight), transform.position - new Vector3(-0.5f, deltaHeight));
         Gizmos.DrawLine(transform.position + new Vector3(0.5f, deltaHeight), transform.position + new Vector3(-0.5f, deltaHeight));
-
     }
 
+
+    /// <summary>
+    /// Returns a random float between deltaSpawnTimeMin and deltaSpawnTimeMax
+    /// </summary>
     private float GetRandomTimeDelta()
     {
         return Random.Range(deltaSpawnTimeMin, deltaSpawnTimeMax);
     }
 
+
+    /// <summary>
+    /// Returns a random position between - deltaHeight and deltaHeight
+    /// </summary>
     private Vector2 GetRandomPos()
     {
         var y = Random.Range(transform.position.y - deltaHeight, transform.position.y + deltaHeight);

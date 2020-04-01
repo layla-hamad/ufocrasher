@@ -1,7 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+
+/// <summary>
+/// Defines the properties of the UFO game object
+/// </summary>
 public class UFO : MonoBehaviour
 {
     public Heart heart_1, heart_2, heart_3;
@@ -25,9 +27,9 @@ public class UFO : MonoBehaviour
     /// The rigidbody controls the physics of this object
     /// </summary>
     private Rigidbody2D rigidbody;
-/// <summary>
-///The renderer controls the appearance of this object
-/// </summary>
+    /// <summary>
+    /// The renderer controls the appearance of this object
+    /// </summary>
     private Renderer render;
 
     public int life = 3;
@@ -67,7 +69,6 @@ public class UFO : MonoBehaviour
                 LevelController.Instance.StartGame();
                 rigidbody.isKinematic = false;
                 rigidbody.AddForce(Vector2.down * jumpforce/2);
-
             }
             rigidbody.AddForce(Vector2.up * jumpforce);
         }
@@ -91,7 +92,7 @@ public class UFO : MonoBehaviour
             {
                 case 2:
                     heart_3.HeartDisappear();
-                    break; 
+                    break;
                 case 1:
                     heart_2.HeartDisappear();
                     break;
@@ -104,6 +105,9 @@ public class UFO : MonoBehaviour
     }
 
 
+    /// <summary>
+    /// Reverts color to normal
+    /// </summary>
     private void RevertDamageColor()
     {
         render.material.color = Color.white;

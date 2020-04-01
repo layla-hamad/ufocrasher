@@ -29,9 +29,12 @@ public class LoopBackground : MonoBehaviour
         renderer.sharedMaterial.SetTextureOffset("_MainTex", new Vector2(offset, 0));
     }
 
+
+    /// <summary>
+    /// Resets the texture offset, because this will otherwise be preserved in the materials
+    /// </summary>
     private void OnDestroy()
     {
         renderer.sharedMaterial.SetTextureOffset("_MainTex", new Vector2(0, 0));
-
     }
 }
