@@ -72,8 +72,6 @@ public class UFO : MonoBehaviour
             }
             rigidbody.AddForce(Vector2.up * jumpforce);
         }
-
-
     }
 
     /// <summary>

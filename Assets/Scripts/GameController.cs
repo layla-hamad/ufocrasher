@@ -51,10 +51,10 @@ public class GameController : MonoBehaviour
 
 
     /// <summary>
-    /// Loads the menu scene, is called by pressing a key after a game over
+    /// Loads the menu scene
     /// </summary>
     public void LoadMenu()
     {
-        SceneManager.LoadScene("MenuScene");
+       SceneManager.LoadScene("MenuScene");
     }
 }

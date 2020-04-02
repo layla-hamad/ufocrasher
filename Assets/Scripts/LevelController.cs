@@ -12,6 +12,8 @@ public class LevelController : MonoBehaviour
     public UFO ufo; // reference to UFO-behaviour
     public GameOverText gameovertext; // reference to GameOverText-behaviour
 
+    private bool isGameOver;
+
 
     /// <summary>
     /// Reference to the singleton
@@ -40,6 +42,17 @@ public class LevelController : MonoBehaviour
     }
 
     /// <summary>
+    /// Checks if the game is over and loads the menu scene if the key is pressed
+    /// </summary>
+    private void Update()
+    {
+        if (isGameOver && Input.GetKeyDown(KeyCode.Space))
+        {
+            GameController.Instance.LoadMenu();
+        }
+    }
+
+    /// <summary>
     /// Starts the game
     /// </summary>
     public void StartGame()
@@ -54,5 +67,8 @@ public class LevelController : MonoBehaviour
     {
         GameIsRunning = false;
         gameovertext.ShowGameOver();
+        isGameOver = true;
     }
+
+
 }
