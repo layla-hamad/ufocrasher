@@ -1,6 +1,12 @@
 ﻿using UnityEngine;
 
-
+/*06.04.20
+ * UFOCrasher
+ * Kimberly Schmid, Layla Hamad und Amrit Kaur
+ * Aufteilung: Gemischt. Jede hatte probiert zu Programmieren und Kommentieren wo es ging. 
+ * Bei Schwierigkeiten lösten wir dann den Teil zusammen. 
+ * Hauptquelle: Keine 
+ */
 /// <summary>
 /// Defines the properties of the UFO game object
 /// </summary>
